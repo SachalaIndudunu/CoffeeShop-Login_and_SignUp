@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laval Coffee - Sign In</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="icon"  href="recs/Layer 1.png">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="animation_signin();">
+
+    <div class="container-fluid main-container">
+        <div class="row">
+
+            <!-- left side start -->
+            <div class="left-container col-6 vh-100 p-5">
+                <!-- <img src="recs/coffee_icons/coffee-beans_2964191.png" id="leaf" alt=""> -->
+                <div class="content-container d-flex flex-column justify-content-between">
+                    <div class="row wrap_01">
+                        <img class="col-3"  src="recs/title.png" alt="">
+                        <p class="desc poppins-regular">"Take life one sip at a time"</p>
+                    </div>
+                    <div class="row d-flex justify-content-end">
+                        <div class="d-flex flex-column align-items-end">
+                            <img src="recs/icons/Instagram_label.png" class="icon-img icon-1" id="btn01" alt="">
+                            <img src="recs/icons/Facebook_label.png" class="icon-img icon-2" id="btn02"  alt="">
+                            <img src="recs/icons/WhatsApp_label.png" class="icon-img icon-3" id="btn03" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- left side end -->
+
+            <!-- right side start -->
+            <div class="right-container col-6 vh-100 p-5 d-flex align-items-center" >
+                <div class="form-container">
+                    <div class="row poppins-regular justify-content-center ">
+                        <div class="row d-flex justify-content-center">
+                            <img class="col-3 logo" src="recs/Layer 1.png" alt="">
+                        </div>
+                        <hr class="col-8">
+                        <div class="col-8 position-relative">
+                            <div class="mt-2 text-container d-flex flex-column position-absolute">
+                                <span>U</span>
+                                <span>S</span>
+                                <span>E</span>
+                                <span>R</span> <br>
+                                <span>L</span>
+                                <span>O</span>
+                                <span>G</span>
+                                <span>I</span>
+                                <span>N</span>
+                            </div>
+                            <div class="row form-container" style="margin: auto;">
+                                <div class="col-12 m-2">
+                                    <label class="form-label" for="uName">User Name</label>
+                                    <input type="text" id="uName" class=" border rounded-0 form-control">
+                                </div>
+                                <div class="col-12 m-2">
+                                    <label class="form-label" for="pwd">Password</label>
+                                    <input type="text" id="pwd" class=" border rounded-0 form-control">
+                                </div>
+                                <div class="col-12 ms-2 me-2" style="font-size: small;">
+                                    <p>Foget password? <span class="click-here">Click here</span></p>
+                                </div>
+                                <div class="col-12 m-2">
+                                    <div class="form-check" >
+                                        <input class="form-check-input border rounded-0" type="checkbox" value="" id="flexCheckDefault" style="cursor: pointer;">
+                                        <label class="form-check-label" for="flexCheckDefault" >
+                                          Remember Me
+                                        </label>
+                                      </div>
+                                </div>
+                                <div class="col-12 m-2">
+                                    <button class="login-btn"><span class="btn-text">Log In</span></button>
+                                </div>
+                                <div class="col-12 ms-2 me-2 text-center" style="font-size: small;">
+                                    <p>Don't have a account? <a href="user_reg.html" class="user-reg">User Registration</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- right side end -->
+
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+
+
