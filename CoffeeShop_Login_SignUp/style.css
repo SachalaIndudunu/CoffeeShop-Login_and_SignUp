@@ -1,0 +1,312 @@
+:root {
+    --brown: #642B18;
+    --cream: #F8D8A9;
+    --link: #b16a00;
+    --white: #ffffff;
+}
+
+
+/* -------------------------------sign in start------------------------------- */
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-container,
+.right-container,
+.main-content-wrap,
+.form-wrap {
+    position: relative;
+    isolation: isolate;
+}
+
+.left-container {
+    --bg-right-img-url: url(recs/signIn-cup-img.png);
+    --bg-blackness: rgba(0, 0, 0, 0.356);
+}
+
+.left-container::after {
+    content: "";
+    position: absolute;
+    background-image: var(--bg-right-img-url);
+    top: -300px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+}
+
+.left-container::before {
+    content: "";
+    position: absolute;
+    background: var(--bg-blackness);
+    inset: 0;
+    background-size: cover;
+    z-index: -1;
+}
+
+.right-container {
+    --bg-opacity: .1;
+}
+
+.right-container::after {
+    content: "";
+    position: absolute;
+    background-image: url(recs/coffeeBeans.jpg);
+    opacity: var(--bg-opacity);
+    inset: 0;
+    transform: scale(1);
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.desc {
+    color: var(--white);
+}
+
+.logo {
+    margin: 40px;
+}
+
+hr {
+    border: 1px solid #642B18;
+    opacity: 1;
+}
+
+.form-container {
+    position: relative;
+    z-index: 999;
+    margin-bottom: 100px;
+    animation: fade-left 1s;
+}
+
+.content-container {
+    height: 100%;
+}
+
+.text-container {
+    padding: 0px 20px 0px 20px;
+    left: -80px;
+}
+
+.text-container span {
+    margin-bottom: 5px;
+    font-size: larger;
+    font-weight: 700;
+    color: var(--brown);
+    text-shadow: 2px 2px var(--cream);
+}
+
+.click-here,
+.user-reg {
+    color: var(--link);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.click-here:hover,
+.user-reg:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    background-color: var(--brown);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    width: 100%;
+    height: 50px;
+    transition: 0.2s;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+    isolation: isolate;
+    transform: scale(1);
+}
+
+.login-btn::after {
+    content: "";
+    background-image: url(recs/beans-png.png);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    z-index: -1;
+    /* transition: 0.3s; */
+}
+
+.login-btn:hover::after {
+    top: -80%;
+    transition-duration: 0.5s;
+}
+
+.login-btn:hover {
+    background-color: var(--cream);
+    color: var(--brown);
+    font-weight: 600;
+    border: 1px solid var(--brown);
+    .btn-text {
+        text-shadow: -1px 0 var(--cream), 0 1px var(--cream), 1px 0 var(--cream), 0 -1px var(--cream);
+    }
+}
+
+.login-btn:active {
+    background-color: #ffd9a0;
+    transform: scale(0.98);
+}
+
+.btn-text {
+    text-shadow: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+.icon-img {
+    height: 30px;
+    margin: 5px 0px 5px 0px;
+    cursor: pointer;
+    /* opacity: 0; */
+    transform: scale(1);
+    transition: ease-in-out 0.3s;
+    animation: fade-left 0.5s ease backwards;
+    animation-delay: calc(.2s * var(--i))
+}
+
+.icon-img:hover {
+    transform: scale(1.2);
+}
+
+.wrap_01 {
+    animation: fade-right 1s;
+}
+
+
+/* .icon-1{
+    animation: fade-left 1s;
+    animation-delay: 0;
+}
+.icon-2{
+    animation: fade-left 1s;
+    animation-delay: 0.5s;
+}
+.icon-3{
+    animation: fade-left 1s;
+    animation-delay: 1s;
+}
+#btn01{
+    opacity: 0;
+}
+#btn02{
+    opacity: 0;
+}
+#btn03{
+    opacity: 0;
+} */
+
+
+/* -------------------------------sign in end------------------------------- */
+
+
+/* -------------------------user registration start ------------------------- */
+
+.main-content-wrap::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(recs/dackCoffeeBg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+}
+
+.form-wrap {
+    width: 550px;
+    height: fit-content;
+    animation: fade-right 1s;
+    margin-left: 80px;
+    /* border-radius: 20px; */
+}
+
+.form-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.336);
+    /* opacity: .7; */
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+}
+
+.title-img {
+    height: 150px;
+    margin: 10px;
+}
+
+.reg-title {
+    color: white;
+    font-size: large;
+    letter-spacing: 3px;
+}
+
+.form_label {
+    color: white;
+}
+
+.circle {
+    position: absolute;
+    background-color: #29110944;
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    top: -15px;
+    bottom: 0;
+    left: -10px;
+    right: 0;
+    border-radius: 50%;
+    transform: scale(1);
+}
+
+.user-reg {
+    font-weight: 600;
+}
+
+
+/* -------------------------user registration end ------------------------- */
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
